@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>ooVoo Website</title>
+        <link rel="stylesheet" href="css/postPage.css"/>
+        <link rel="stylesheet" href="../css/main.css">
+    </head>
+    <body id="post_image">
+    <!--HEADER-->
+    <header>
+        <div class="post-wrapper">
+            <span class="project_title-post">OOVOO 12345 ooVoo Website Design &mdash; Homepage </span>
+            <div class="hamburger">
+                <a id="showRight"></a>
+            </div>
+        </div>
+
+    </header>
+
+    <!-- Nav stuff-->
+    <div class="page_navigation">
+        <nav>
+            <div>
+                <a href="/RADG Post Page/Client/postPage.html" class="back_to_list">back to list</a>
+                <!--<span class="menu-title">Version 1</span>-->
+                <a href="">Homepage &ndash; Desktop</a>
+                <a href="">Homepage &ndash; Mobile</a>
+                <a href="">ooView</a>
+                <a href="">Download</a>
+
+                <!--<a href="">Homepage &ndash; Desktop</a>-->
+                <!--<a href="">Homepage &ndash; Mobile</a>-->
+                <!--<a href="">ooView</a>-->
+                <!--<a href="">Download</a>-->
+                <!--<a href="">Homepage &ndash; Desktop</a>-->
+                <!--<a href="">Homepage &ndash; Mobile</a>-->
+                <!--<a href="">ooView</a>-->
+                <!--<a href="">Download</a>-->
+                <!--<a href="">Homepage &ndash; Desktop</a>-->
+                <!--<a href="">Homepage &ndash; Mobile</a>-->
+                <!--<a href="">ooView</a>-->
+                <!--<a href="">Homepage &ndash; Desktop</a>-->
+                <!--<a href="">Homepage &ndash; Mobile</a>-->
+                <!--<a href="">ooView</a>-->
+                <!--<a href="">Download</a>-->
+                <!--<a href="">Homepage &ndash; Desktop</a>-->
+                <!--<a href="">Homepage &ndash; Mobile</a>-->
+                <!--<a href="">ooView</a>-->
+                <!--<a href="">Download</a>-->
+                <!--<a href="">Homepage &ndash; Desktop</a>-->
+                <!--<a href="">Homepage &ndash; Mobile</a>-->
+                <!--<a href="">ooView</a>-->
+            </div>
+        </nav>
+    </div>
+    <!-- -->
+    <!-- END HEADER -->
+
+    <!--POST PAGE IMAGE-->
+        <div class="image-container">
+            <img src="img/postIMG/00-Home-b.jpg">
+        </div>
+    <!--END-->
+
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+
+    <script>
+//            $("#showRight").click(function () {
+//                $(this).toggleClass('active');
+//                $('.page_navigation').toggle('slide');
+//            });
+
+            $("#showRight").click(function () {
+
+                // Set the effect type
+                var effect = 'slide';
+
+                // Set the options for the effect type chosen
+                var options = { direction: 'right' };
+
+                // Set the duration (default: 400 milliseconds)
+                var duration = 400;
+                $(this).toggleClass('active');
+                $('.page_navigation').toggle(effect, options, duration);
+
+            });
+        </script>
+
+        <!--
+        <script src="js/vendor/classie.js"></script>
+        <script>
+
+            //MENU
+            var menuLeft = document.getElementById( 'cbp-spmenu-s1' ),
+                    menuRight = document.getElementById( 'cbp-spmenu-s2'),
+                    showRight = document.getElementById('showRight'),
+                    body = document.body;
+
+            showRight.onclick = function() {
+                classie.toggle( this, 'active' );
+                classie.toggle( menuRight, 'cbp-spmenu-open' );
+                //disableOther( 'showRight' );
+                $(".menu").toggleClass("menu_fix");
+                //$('#top-fix').toggleClass("top_fix");
+            };
+
+
+            function disableOther( button ) {
+                if( button !== 'showRight' ) {
+                    classie.toggle( showRight, 'disabled' );
+                }
+            }
+        </script>
+        -->
+    </body>
+</html>

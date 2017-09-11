@@ -1,0 +1,69 @@
+<div id="boxes">
+    <div id="dialog" class="window">
+        <div class="loginForm">
+            <div class="wrapper">
+                <div class="loginLogo">
+                    <img src="img/loginLogo.jpg">
+                </div>
+                <form>
+                    <input class="fullForm" type="text" id="username" name="username" placeholder="Username:">
+                    <input class="fullForm" type="password" id="password" name="password" placeholder="Password:">
+                    <div id="lower">
+                        <input type="checkbox" class="circleBox">
+                        <label class="check" for="checkbox">remember me</label>
+                        <input type="submit" value="Sign-In" class="close agree fullForm button red">
+                    </div>
+                    <a href="#" class="">forgot password</a>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="mask"></div>
+</div>
+
+<div class="intro">
+    <div class="wrapper">
+        <h1>real art’s
+            <span>post pages</span>
+        </h1>
+        <p>This is a tool to create dynamic post pages quickly to share internally or with clients. Search by client code, job number or create a new page to get started.</p>
+
+        <div class="homeBTNS">
+            <a class="button red" ui-sref="page">Create Post Page</a>
+            <form class="search-form" role="search">
+                <label for="search-field">
+                    <span class="text">Search</span>
+                </label>
+                <input type="search" id="search-field" />
+                <button type="submit">
+                    <img src="img/magGlass.png">
+                </button>
+            </form>
+        </div>
+
+    </div>
+</div>
+
+<script>
+    (function($) {
+        'use strict';
+
+        var FOCUSED_CLASS = 'is-focused';
+        var $searchForm = $('.search-form');
+        var $searchField = $searchForm.find('input');
+
+        $searchField.on('focus', function() {
+            $searchForm.addClass(FOCUSED_CLASS);
+        });
+        $searchField.on('blur', function() {
+            if ($searchField.val() === '') {
+                $searchForm.removeClass(FOCUSED_CLASS);
+            }
+        });
+
+        // Prevent search from submitting for demo purposes
+        $searchForm.on('submit', function() {
+            return false;
+        });
+    })(jQuery);
+</script>

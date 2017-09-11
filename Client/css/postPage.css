@@ -1,0 +1,274 @@
+/* line 3, ../sass/_postMain.scss */
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+/* line 6, ../sass/_postMain.scss */
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+
+/* line 7, ../sass/_postMain.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* line 15, ../sass/_postMain.scss */
+#post_page .wrapper {
+  max-width: 960px;
+  width: 100%;
+  padding: 0px 20px;
+}
+/* line 21, ../sass/_postMain.scss */
+#post_page h1, #post_page .jobDesc {
+  margin: 0px;
+  font-size: 36px;
+  font-weight: 100;
+  letter-spacing: 0.06em;
+  padding-right: 7px;
+  font-weight: 100;
+  display: inline-block;
+  line-height: 125%;
+}
+/* line 33, ../sass/_postMain.scss */
+#post_page #controlRow.project_title {
+  height: auto;
+}
+/* line 37, ../sass/_postMain.scss */
+#post_page .project_title {
+  float: left;
+  width: 100%;
+  padding: 30px 0;
+  margin-bottom: 30px;
+}
+/* line 43, ../sass/_postMain.scss */
+#post_page .project_title .clientName {
+  margin: 0px 0 5px;
+  font-weight: 600;
+  float: left;
+  width: 100%;
+  font-size: 17px;
+  text-transform: uppercase;
+  color: #EE3224;
+  letter-spacing: 0.05em;
+}
+/* line 56, ../sass/_postMain.scss */
+#post_page .postSection {
+  float: left;
+  width: 100%;
+  padding-bottom: 60px;
+}
+/* line 61, ../sass/_postMain.scss */
+#post_page .postSection h2 {
+  margin: 0px 0 15px;
+  font-weight: 600;
+  float: left;
+  width: 100%;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #EE3224;
+  letter-spacing: 0.05em;
+}
+/* line 72, ../sass/_postMain.scss */
+#post_page .postSection ul, #post_page .postSection ol {
+  list-style: none;
+  padding: 0 0 0 30px;
+  margin: 0;
+}
+/* line 78, ../sass/_postMain.scss */
+#post_page .postSection ol li {
+  counter-increment: counter;
+  padding: 10px 0;
+  margin: 0;
+}
+/* line 82, ../sass/_postMain.scss */
+#post_page .postSection ol li::before {
+  content: counter(counter);
+  margin-right: 5px;
+  font-size: 20px;
+  color: #b9b9b9;
+  font-weight: 800;
+  padding: 3px 15px 3px 0;
+  position: relative;
+  top: 1px;
+}
+/* line 96, ../sass/_postMain.scss */
+#post_page .postSection a {
+  color: #464646;
+  font-weight: 100;
+  font-size: 18px;
+  text-decoration: none;
+  letter-spacing: 0.025em;
+}
+/* line 102, ../sass/_postMain.scss */
+#post_page .postSection a:hover {
+  color: #EE3224;
+}
+/* line 108, ../sass/_postMain.scss */
+#post_page footer {
+  float: left;
+  width: 100%;
+}
+
+/* line 117, ../sass/_postMain.scss */
+#post_image {
+  background: #ececec !important;
+}
+/* line 120, ../sass/_postMain.scss */
+#post_image .project_title-post {
+  float: left;
+  display: inline-block;
+  padding-right: 50px;
+}
+/* line 131, ../sass/_postMain.scss */
+#post_image .hamburger #showRight {
+  position: absolute;
+  z-index: 3;
+  right: 25px;
+  top: 25px;
+  float: right;
+  display: inline-block;
+  background: url("../img/hamburger.png") no-repeat #FFFFFF;
+  background-position: top center;
+  height: 20px;
+  width: 25px;
+  padding: 3px;
+  -webkit-transition: ease-in-out 0.25s;
+  -moz-transition: ease-in-out 0.25s;
+  -o-transition: ease-in-out 0.25s;
+  transition: ease-in-out 0.25s;
+  transition-delay: 0.20s;
+}
+/* line 150, ../sass/_postMain.scss */
+#post_image .hamburger #showRight.active {
+  background-position: bottom center;
+  -webkit-transition: ease-in-out 0.25s;
+  -moz-transition: ease-in-out 0.25s;
+  -o-transition: ease-in-out 0.25s;
+  transition: ease-in-out 0.25s;
+  transition-delay: 0.25s;
+}
+/* line 161, ../sass/_postMain.scss */
+#post_image header {
+  z-index: 1;
+  position: fixed;
+  width: 100%;
+  padding: 24px 25px;
+}
+/* line 170, ../sass/_postMain.scss */
+#post_image header span {
+  font-weight: 100;
+  color: #464646;
+  font-size: 15px;
+}
+/* line 177, ../sass/_postMain.scss */
+#post_image .image-container {
+  margin: 0 auto;
+  width: 100%;
+  padding-top: 100px;
+}
+/* line 181, ../sass/_postMain.scss */
+#post_image .image-container img {
+  margin: 0 auto;
+  display: block;
+  width: 100%;
+  max-width: 1280px;
+}
+
+/* line 193, ../sass/_postMain.scss */
+.page_navigation {
+  display: none;
+  background: rgba(236, 236, 236, 0.975);
+  position: fixed;
+  right: 0px;
+  border-left: 1px solid #D7D7D7;
+  width: 300px;
+  height: 100%;
+  overflow-y: scroll;
+  padding-top: 70px;
+}
+/* line 204, ../sass/_postMain.scss */
+.page_navigation .menu-title {
+  display: block;
+  border-bottom: 1px solid #d7d7d7;
+  padding: 10px 20px;
+  color: #464646;
+  font-weight: 600;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.05em;
+}
+/* line 217, ../sass/_postMain.scss */
+.page_navigation .back_to_list {
+  display: block;
+  border-bottom: 1px solid #d7d7d7;
+  padding: 10px 20px;
+  color: #EE3224;
+  font-weight: 600;
+  font-size: 9px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.05em;
+  background: #fff;
+}
+/* line 228, ../sass/_postMain.scss */
+.page_navigation .back_to_list:hover {
+  background: #fff;
+  color: #b00c00;
+}
+/* line 234, ../sass/_postMain.scss */
+.page_navigation a {
+  display: block;
+  border-bottom: 1px solid #d7d7d7;
+  border-left: 1px solid #d7d7d7;
+  padding: 20px;
+  color: #464646;
+  font-size: 14px;
+  font-weight: 300;
+  text-decoration: none;
+  letter-spacing: 0.05em;
+}
+/* line 244, ../sass/_postMain.scss */
+.page_navigation a:hover {
+  background: #EE3224;
+  color: #fff;
+}
+/* line 248, ../sass/_postMain.scss */
+.page_navigation a:active {
+  background: #EE3224;
+  color: #fff;
+}
+
+@media only screen and (max-width: 768px) {
+  /* line 261, ../sass/_postMain.scss */
+  #post_page .project_title h1, #post_page .project_title .jobDesc {
+    font-size: 32px;
+  }
+  /* line 267, ../sass/_postMain.scss */
+  #post_page .postSection ol li::before {
+    font-size: 14px;
+  }
+  /* line 268, ../sass/_postMain.scss */
+  #post_page .postSection a {
+    font-size: 16px;
+  }
+
+  /* line 273, ../sass/_postMain.scss */
+  #post_image header {
+    min-height: 83px;
+  }
+  /* line 275, ../sass/_postMain.scss */
+  #post_image header span {
+    font-size: 12px;
+  }
+
+  /* line 281, ../sass/_postMain.scss */
+  .page_navigation {
+    padding-top: 83px;
+  }
+}
